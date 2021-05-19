@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
+
+main{
+    width:80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+    background-color: antiquewhite;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14pt;
+    width: 50%;
+    display: inline-block;
+}
+
+div{
+   margin-left: auto;
+   margin-bottom: 8px;
+}
+
+small{
+   color:green; 
+}
+
+input{
+    margin-left: 1px;
+}
+
+#listagem{
+    background-color: lightsalmon;
+    margin: 0;
+    height: 400px;
+    width: 50%;
+    overflow-y: scroll;
+    display: inline-block;
+}
+
+
+button{
+    display: block;
+    background-color:cornflowerblue;
+    color: cornsilk;
+    margin-left: 60px;
+    border-radius: 5px;
+}
+
+
+
+button:hover{
+    background-color:darkolivegreen;
+}
+
+img{
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+label{
+    display: block;
+}
