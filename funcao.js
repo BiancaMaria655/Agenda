@@ -31,6 +31,12 @@ function addNewContact() {
     var cpEmail = $("input[name=iemail]").val()
     var cpLocal = $("input[name=ilocal]").val()
 
+    //verificando se foi inserido um email ou telefone
+    if (cpFone == "" && cpEmail == "") {
+        alert('Digite pelo menos um número de telefone ou um endereço de email.');
+        return
+    }
+
     //imprime os dados
 
     if (tel >= 2) { //mais de um tel
@@ -46,7 +52,7 @@ function addNewContact() {
     }
 
     //adiciona botão remover
-    $("#itemContact" + cont + "").append("<button class = 'btnRemover' id = " + cont + " onclick='removeContact()' style='float:right;'>Remove</button></br></br>");
+    $("#itemContact" + cont + "").append("<button class = 'btnRemover' id = " + cont + " onclick='removeContact()' style='float:right;'>Remover</button></br></br>");
 
 
 
