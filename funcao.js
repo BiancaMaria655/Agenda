@@ -21,10 +21,9 @@ function addNewContact() {
         cpFoneV[0] = $("input[name=ifone]").val()
 
         for (let i = 1; i < tel; i++) {
-            alert($("input[class=tel" + (i + 1) + "i]").val());
             cpFoneV[i] = $("input[class=tel" + (i + 1) + "i]").val()
         }
-        alert(cpFoneV.join("-"));
+
     } else { //se tiver apenas 1
         var cpFone = $("input[name=ifone]").val()
     }
@@ -43,7 +42,6 @@ function addNewContact() {
         }
         $("#itemContact" + cont).append(cpEmail + " - " + cpLocal + "</li>");
     } else { //apenas 1 tel
-        alert('Entrou');
         $("#listContact").append("<li id = 'itemContact" + (++cont) + "'>" + cpNome + " - " + cpFone + " - " + cpEmail + " - " + cpLocal + "</li>");
     }
 
@@ -64,6 +62,7 @@ function addNewContact() {
             $(".tel" + (i + 1) + "l").remove();
             $(".tel" + (i + 1) + "s").remove();
         }
+        tel = 1;
     }
 }
 
